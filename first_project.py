@@ -1,19 +1,10 @@
-# Typecasting = Converting a variable from one data type to another
+# User input
 
-name = "Vincent"
-age = 25
-gpa = 3.3
-is_student = True
+name = input("What is your name?:")
+age = int(input(f"How old are you?:")) # typecasting age to int
 
-print(type(is_student))
+age = age + 1
 
-gpa = (int(gpa))
-print(gpa)
-
-age = str(age)
-
-age += "1"
-print(age)
-
-name = bool(name)
-print(name)
+print(f"Hello {name}!")
+print("That's surprising, I thought you would be younger!")
+print(f"You turn {age} next year right?")

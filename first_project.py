@@ -1,10 +1,7 @@
-# User input
+# Exercise 1 Rectangle Area Calc
 
-name = input("What is your name?:")
-age = int(input(f"How old are you?:")) # typecasting age to int
+length = float(input("Enter the length: "))
+width = float(input("Enter the width: "))
+area = length * width
 
-age = age + 1
-
-print(f"Hello {name}!")
-print("That's surprising, I thought you would be younger!")
-print(f"You turn {age} next year right?")
+print(f"The area is {area}")

@@ -1,7 +1,8 @@
-# Exercise 1 Rectangle Area Calc
+# Exercise 2 Shopping Cart Program
 
-length = float(input("Enter the length: "))
-width = float(input("Enter the width: "))
-area = length * width
+item = input("What item are you buying: ")
+price = float(input("What is the price: "))
+quantity = int(input("How many are you buying: "))
+total = price * quantity
 
-print(f"The area is {area}")
+print(f"Your total is ${total} ")

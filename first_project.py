@@ -1,8 +1,12 @@
-# Exercise 2 Shopping Cart Program
+# If Statements
 
-item = input("What item are you buying: ")
-price = float(input("What is the price: "))
-quantity = int(input("How many are you buying: "))
-total = price * quantity
+age = int(input("Enter your age: "))
 
-print(f"Your total is ${total} ")
+if age >= 18:
+    print("You qualify for the credit card")
+elif age == 0:
+    print("You haven't been born yet!:")
+elif age < 0:
+    print("Please type your real age")
+else:
+    print("You must be 18+ to signup")

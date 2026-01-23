@@ -1,12 +1,22 @@
-# If Statements
+# Python Calculator
+import math
 
-age = int(input("Enter your age: "))
+num1 = float(input("Enter the first Number: "))
+num2 = float(input("Enter the second Number: "))
 
-if age >= 18:
-    print("You qualify for the credit card")
-elif age == 0:
-    print("You haven't been born yet!:")
-elif age < 0:
-    print("Please type your real age")
+operator = input("Choose an operator(+ - * /): ")
+
+if operator == "+":
+    result = num1 + num2
+    print(round(result))
+elif operator == "-":
+    result = num1 - num2
+    print(round(result))
+elif operator == "*":
+    result = num1 * num2
+    print(round(result))
+elif operator == "/":
+    result = num1 / num2
+    print(round(result, 2))
 else:
-    print("You must be 18+ to signup")
+    print(f"The {operator} is not Valid")

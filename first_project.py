@@ -1,19 +1,12 @@
-# Validate User Input Exercise
+# Indexing = accessing elements of sequence using [] (indexing operator)
+#            [ start: end : step ]
 
-# 1. Username is no more that 12 characters
-# 2. Username must not contain spaces
-# 3. username must not contain digits
+credit_number = "1233-4567-89-8686"
 
-username = input("Enter your username: ")
+# print(credit_number[0])
+# print(credit_number[0:4])
+# print(credit_number[5:9])
+# print(credit_number[::2]) #Print every second character
 
-
-
-if len(username) > 12:
-    print("Username cannot exceed 12 characters")
-elif not username.isalpha():
-    print("Your username can't contain numbers")
-elif username.find(" ") == -1:
-    print("Your username can't contain spaces")
-else:
-    print(f"Welcome {username}")
-
+last_four_digits = credit_number[-4:] # printing the last four digits of the credit card
+print(last_four_digits)

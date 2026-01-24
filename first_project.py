@@ -1,13 +1,13 @@
-# Conditional Expression
+# String methods
 
-num = 5
-a = 55
-b = 7
-user_role = "admin"
+# name = input("Enter your full name: ")
+# phone_number = input("WHat is your phone number: ")
+# result = phone_number.count("-")
 
-print("Positive" if num > 0 else "Negative")
-result = "Even" if num % 2 == 0 else "Odd"
-max_num = a if a > b else b
-print(max_num)
+# result = len(name)
+# result = name.find("Y")
+# name = name.capitalize()
 
-print("Access allowed" if user_role == "admin" else "Access denied")
+# print(result)
+
+print(help(str))

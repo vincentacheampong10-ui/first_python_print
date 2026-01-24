@@ -1,12 +1,9 @@
-# Indexing = accessing elements of sequence using [] (indexing operator)
-#            [ start: end : step ]
+# Format specifiers
 
-credit_number = "1233-4567-89-8686"
+price1 = 4.456
+price2 = 44.555
+price3 =32.5555
 
-# print(credit_number[0])
-# print(credit_number[0:4])
-# print(credit_number[5:9])
-# print(credit_number[::2]) #Print every second character
-
-last_four_digits = credit_number[-4:] # printing the last four digits of the credit card
-print(last_four_digits)
+print(f"The price 1 is ${price1:.1f}")
+print(f"The price 2 is ${price2:.1f}")
+print(f"The price 3 is ${price3:.1f}")

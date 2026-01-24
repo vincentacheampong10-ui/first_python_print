@@ -1,26 +1,13 @@
-# Logical operators = OR, AND, NOT
+# Conditional Expression
 
-temp = 25
-is_raining = False
+num = 5
+a = 55
+b = 7
+user_role = "admin"
 
+print("Positive" if num > 0 else "Negative")
+result = "Even" if num % 2 == 0 else "Odd"
+max_num = a if a > b else b
+print(max_num)
 
-# OR
-# if temp > 35 or temp < 0 or is_raining:
-#     print("The outdoor event has been cancelled")
-# else:
-#     print("The outdoor event is still scheduled")
-
-
-# AND
-# if temp < 35 and is_raining:
-#     print("The outdoor event has been cancelled")
-# else:
-#     print("The outdoor event is still scheduled")
-
-# Not
-if temp < 35 and not is_raining:
-    print("It's cold outside today ")
-elif 65 < temp < 75:
-    print("Tt is warm outside")
-elif 75 > temp <95:
-    print("It is very hot outside")
+print("Access allowed" if user_role == "admin" else "Access denied")

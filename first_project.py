@@ -1,9 +1,9 @@
-# Format specifiers
+# While loops
 
-price1 = 4.456
-price2 = 44.555
-price3 =32.5555
+name = input("What is your name: ")
 
-print(f"The price 1 is ${price1:.1f}")
-print(f"The price 2 is ${price2:.1f}")
-print(f"The price 3 is ${price3:.1f}")
+while name == "":
+    print("You did not enter your name")
+    name = input("What is your name: ")
+
+    print(F"Hello {name}")

@@ -8,12 +8,19 @@
 #
 #     print(F"You are {age} years old")
 
-food = input("Enter your favourite food(q to quit): ")
+# food = input("Enter your favourite food(q to quit): ")
+#
+# while not food == "q":
+#     print(f"Your favourite food is {food.capitalize()}.")
+#     food = input("Enter your favourite food(q to quit): ")
+#
+# print("Bye, have a good day.")
 
-while not food == "q":
-    print(f"Your favourite food is {food.capitalize()}.")
-    food = input("Enter your favourite food(q to quit): ")
+num = int(input("Enter a number between 1 and 10: "))
+while num < 1 or num > 10:
+    print(f"{num} is not valid")
+    num = int(input("Enter a # between 1 and 10: "))
 
-print("Bye, have a good day.")
+print(f"Your number is {num}")
 
 
